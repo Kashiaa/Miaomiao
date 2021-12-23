@@ -27,7 +27,7 @@ WebUI.waitForElementPresent(findTestObject('Page_Wowhead  Trouvez la femme de Ma
 WebUI.click(findTestObject('Page_Wowhead  Trouvez la femme de Mankrik g_4b955e/button_Jaccepte_cookies'))
 
 WebUI.waitForElementPresent(findTestObject('Page_Wowhead  Trouvez la femme de Mankrik g_4b955e/button_Refuser_notifs'), 
-    15)
+    5)
 
 WebUI.click(findTestObject('Page_Wowhead  Trouvez la femme de Mankrik g_4b955e/button_Refuser_notifs'))
 
@@ -44,6 +44,41 @@ WebUI.waitForElementPresent(findTestObject('Page_Lardeur - PNJ - World of Warcra
 WebUI.click(findTestObject('Object Repository/Page_Lardeur - PNJ - World of Warcraft/a_Chahuteurs de cadavre'))
 
 WebUI.click(findTestObject('Page_Chahuteurs de cadavre - Objet - World _4f6cc4/td_Détails_Chahuteurs de cadavre'))
+
+WebUI.verifyElementPresent(findTestObject('Page_Chahuteurs de cadavre - Objet - World of Warcraft/Chahuteurs de cadavre'), 
+    5)
+
+WebUI.verifyElementPresent(findTestObject('Page_Chahuteurs de cadavre - Objet - World of Warcraft/span_Niveau dobjet 57'), 
+    5)
+
+WebUI.verifyElementPresent(findTestObject('Page_Chahuteurs de cadavre - Objet - World of Warcraft/Lié quand ramassé'), 5, 
+    FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.verifyElementPresent(findTestObject('Page_Chahuteurs de cadavre - Objet - World of Warcraft/Pieds'), 5)
+
+WebUI.verifyElementPresent(findTestObject('Page_Chahuteurs de cadavre - Objet - World of Warcraft/span_Tissu'), 5)
+
+WebUI.verifyElementPresent(findTestObject('Page_Chahuteurs de cadavre - Objet - World of Warcraft/span_Armure  2'), 5)
+
+WebUI.verifyElementPresent(findTestObject('Page_Chahuteurs de cadavre - Objet - World of Warcraft/Intelligence'), 5, 
+    FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.verifyElementPresent(findTestObject('Page_Chahuteurs de cadavre - Objet - World of Warcraft/Endurance'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.verifyElementPresent(findTestObject('Page_Chahuteurs de cadavre - Objet - World of Warcraft/span_Augmente votre score de hte de 13 (0.39 au niveau 70)'), 
+    5, FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.verifyElementPresent(findTestObject('Page_Chahuteurs de cadavre - Objet - World of Warcraft/Versatilité'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.verifyElementPresent(findTestObject('Page_Chahuteurs de cadavre - Objet - World of Warcraft/Au_niveau'), 5, 
+    FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.verifyElementPresent(findTestObject('Page_Chahuteurs de cadavre - Objet - World of Warcraft/Durabilité'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.verifyElementPresent(findTestObject('Page_Chahuteurs de cadavre - Objet - World of Warcraft/Niveau'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.verifyElementPresent(findTestObject('Page_Chahuteurs de cadavre - Objet - World of Warcraft/Prix_de_Vente'), 
+    5, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.closeBrowser()
 
